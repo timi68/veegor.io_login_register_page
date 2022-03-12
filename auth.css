@@ -1,0 +1,127 @@
+.form-box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: auto;
+  max-width: 90%;
+  padding: 3em;
+  -webkit-box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  width: 450px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+@media screen and (max-width: 430px) {
+  .form-box {
+    padding-inline: 1em;
+  }
+}
+
+.form-box .form-group {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-box .form-label {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 3em;
+  font-size: 1em;
+}
+
+.form-box div.form-group {
+  margin-block: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+}
+
+.form-box div.form-group .label-text {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #1e337e;
+}
+
+.form-box div.form-group .text-control {
+  font-family: Poppins;
+  padding: 1em 1.5em;
+  width: 100%;
+  background: #fff;
+  font-size: 0.9em;
+  max-width: 100%;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px #1e337e;
+          box-shadow: 0 0 3px #1e337e;
+}
+
+.form-box .action-control {
+  margin-block: 2em;
+}
+
+.form-box .action-control .submit-btn {
+  padding: 1em;
+  background: #17275c;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1em;
+  border-radius: 30px;
+}
+
+.form-box .link {
+  margin-block: 1em;
+}
+
+.form-box .link .text span:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.9em;
+}
+
+.form-box .link a {
+  color: #1e337e;
+  font-weight: 600;
+}
+
+.auth .logo-wrapper {
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.auth .logo-wrapper img {
+  width: 150px;
+}
+
+.auth .auth-wrapper {
+  padding-block: 1em 3em;
+}
+
+.register-wrapper .form-label .secondary-text {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+/*# sourceMappingURL=auth.css.map */

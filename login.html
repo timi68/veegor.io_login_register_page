@@ -1,0 +1,259 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Veegor - your easy access to the blockchain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Veegor Blockchain App">
+  <meta name="keywords" content="Erc20, Ethereum, Binance, Bitcoin, Matic">
+  <meta name="author" content="veegor">
+  <meta name="email" content="info@veegor.io">
+  <meta name="website" content="https://veegor.io">
+  <meta name="Version" content="v1.0.0">
+  <!-- favicon -->
+  <link href="https://veegor.io/public/images/favicon.ico" rel="shortcut icon">
+  <!-- Bootstrap -->
+  <link href="https://veegor.io/public/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://veegor.io/public/css/tiny-slider.css" rel="stylesheet" type="text/css">
+  <link crossorigin="anonymous" href="https://veegor.io/public/css/materialdesignicons.min.css" rel="stylesheet"
+    type="text/css">
+  <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" rel="stylesheet">
+  <!-- Main Css -->
+  <link href="https://veegor.io/public/css/style.css" rel="stylesheet" type="text/css" id="theme-opt">
+  <link rel="icon" type="image/x-icon" href="https://veegor.io//images/favicon.ico">
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="global.css">
+  <script type="text/javascript" async=""
+    src="https://www.gstatic.com/recaptcha/releases/85AXn53af-oJBEtL2o2WpAjZ/recaptcha__en.js" crossorigin="anonymous"
+    integrity="sha384-gcMWyJurhs2OxKnLeJqCvLoRV/QghIiqjOme29q6JkyYNVHkVmiLiwnzz6TtRlzd"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <script type="text/javascript" src="https://veegor.io/js/main.js?36"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+
+</head>
+
+<body>
+
+  <!-- Start -->
+  <div class="auth login-container">
+    <div class="logo-wrapper">
+      <a href="/" class="logo" style="display: flex; align-items: center; font-size: 1.5em; font-weight: 600;">
+        <img src="https://veegor.io/public/images/logo-dark.png" alt="Web logo">
+      </a>
+    </div>
+    <div class="auth-wrapper login-wrapper">
+      <div class="section form-box">
+        <form action="#" id="frmonez" class="form-group login-form" data-aos="fade-up" data-aos-delay="300" role="form">
+          <div class="form-wrapper">
+            <div class="form-label">Hi, Welcome Back</div>
+            <div class="form-group">
+              <label for="username" class="form-group-label">
+                <span class="label-text">Username*</span>
+              </label>
+              <input type="text" id="usernamez" placeholder="Enter your username" name="username"
+                class="text-control username">
+            </div>
+            <div class="form-group">
+              <label for="username" class="form-group-label">
+                <span class="label-text">Wallet
+                  Key*</span>
+              </label>
+              <input type="text" id="passwordz" placeholder="Enter your wallet key" type="password"
+                class="text-control username">
+            </div>
+
+            <div style="width:90%;margin:0px auto" class="g-recaptcha"
+              data-sitekey="6LdLxf8dAAAAAMH0MqMyt7YvSgzbWOROYw4RZ7Xs"></div>
+            <div class="spinner-border text-info" id="spinnerz" role="status" style="margin-left: 46%; display: none;">
+              <br>
+            </div>
+            <div class="action-control">
+              <button type="submit" class="submit-btn" id="submit-button" name="submit">
+                <span>Login</span>
+              </button>
+            </div>
+            <div class="register-link link">
+              <div class="text"><span>Don't have an account ? <span><a href="/register"> Create
+                      Account</a></span></span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Start -->
+  <footer class="footer bg-footer" style="background-color: #000C35 !important ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-py-60">
+            <div class="row">
+
+
+              <div class="col-lg-8 col-md-8 col-12">
+
+
+                <div class="row">
+
+
+                  <div class="col-lg-4 col-md-4 col-12 order-1 order-md-2">
+                    <h6 class="footer-head">Protocols</h6>
+                    <ul class="list-unstyled footer-list mt-4">
+                      <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Network Protocol</a>
+                      </li>
+                      <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Listing Protocol</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <!--end col-->
+
+
+                  <div class="col-lg-4 col-md-4 col-12 order-1 order-md-2">
+                    <h6 class="footer-head">About Us</h6>
+                    <ul class="list-unstyled footer-list mt-4">
+                      <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>About Us</a></li>
+                      <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Our Team</a></li>
+                      <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Blogs</a></li>
+                    </ul>
+                  </div>
+                  <!--end col-->
+
+
+
+                  <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 order-2 order-md-3">
+                    <h6 class="footer-head">Support</h6>
+
+                    <ul class="list-unstyled footer-list mt-4">
+                      <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Help Center</a></li>
+                      <li><a href="#" class="text-foot"><i class="uil uil-angle-right-b me-1"></i>Press Room</a></li>
+                      <li><a href="https://veegor.io/terms.html" class="text-foot"><i
+                            class="uil uil-angle-right-b me-1"></i>Terms Of Service</a></li>
+                      <li><a href="https://veegor.io/privacy.html" class="text-foot"><i
+                            class="uil uil-angle-right-b me-1"></i>Privacy Policy</a></li>
+                    </ul>
+
+                    <br><br>
+
+                  </div>
+                  <!--end col-->
+
+                </div>
+
+              </div>
+
+
+              <div class="col-lg-4 col-md-4 col-12">
+
+                <div class="d-flex">
+                  <div class="flex-1 ms-md-4 ms-3">
+                    <h4 class="fw-bold text-light title-dark mb-1">Subscribe To Our Newsletters</h4>
+                    <p class="text-white-50 mb-0">Lets keep in touch with you, you will be the first to recieve news
+                      about oportunities and offers from our platform.</p>
+                    <br> <a href="javascript:void(0)" class="btn btn-primary"
+                      style="background-color: #F6AD19 !important; border-color: #000C35 !important;">Subscribe Now</a>
+                  </div>
+
+
+
+                </div>
+
+              </div>
+              <!--end row-->
+            </div>
+          </div>
+          <!--end col-->
+        </div>
+        <!--end row-->
+      </div>
+      <!--end container-->
+
+      <div class="footer-py-30 footer-bar bg-footer" style="background-color: #000C35 !important ;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-4">
+              <div class="text-sm-start text-center">
+                <a href="#">
+                  <img src="https://veegor.io/public/images/logo-light.png" height="40" alt="">
+                </a>
+              </div>
+            </div>
+            <!--end col-->
+
+            <div class="col-sm-8 mt-4 mt-sm-0">
+              <div class="text-sm-end text-center">
+                Copyright © 2021 Frutiv Technologies
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end container-->
+      </div>
+    </div>
+  </footer>
+  <!--end footer-->
+  <!-- End -->
+
+  <!-- Back to top -->
+  <a href="javascript:void(0)" onclick="topFunction()" id="back-to-top" class="back-to-top rounded-pill"
+    style="display: block;"><i class="mdi mdi-arrow-up"></i></a>
+  <!-- Back to top -->
+
+  <!-- javascript -->
+  <script src="https://veegor.io/public/js/bootstrap.bundle.min.js"></script>
+  <script src="https://veegor.io/public/js/tiny-slider.js"></script>
+  <script src="https://veegor.io/public/js/feather.min.js"></script>
+  <!-- Main Js -->
+  <script src="https://veegor.io/public/js/plugins.init.js"></script>
+  <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+  <script src="https://veegor.io/public/js/app.js"></script>
+  <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+
+
+  <script>
+
+    //logoutpg();
+
+    document.getElementById("submit-button").onclick = login;
+
+
+
+    sessionStorage.setItem("paymenturllink", window.location.search);
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+  <div
+    style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+    <div
+      style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;">
+    </div>
+    <div class="g-recaptcha-bubble-arrow"
+      style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;">
+    </div>
+    <div class="g-recaptcha-bubble-arrow"
+      style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;">
+    </div>
+    <div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes"
+        src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=85AXn53af-oJBEtL2o2WpAjZ&amp;k=6LdLxf8dAAAAAMH0MqMyt7YvSgzbWOROYw4RZ7Xs"
+        name="c-oaqz7o7avwtn" frameborder="0" scrolling="no"
+        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+        style="width: 100%; height: 100%;"></iframe></div>
+  </div>
+</body>
+
+</html>
